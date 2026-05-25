@@ -4,7 +4,7 @@
 - GitHub account
 - Vercel account (sign in with GitHub)
 - Supabase account
-- Gemini API key (aistudio.google.com)
+- Gemini API key  (aistudio.google.com)
 
 ## Step 1 — Push to GitHub
 1. Go to github.com → New repository → name it "resume-tailor"
