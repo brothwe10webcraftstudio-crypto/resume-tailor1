@@ -12,6 +12,7 @@ import { Loader2 } from 'lucide-react';
 
 function ProtectedRoute({ children }: { children: React.ReactNode }) {
   const { user, loading } = useAuth();
+
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center">
@@ -19,9 +20,11 @@ function ProtectedRoute({ children }: { children: React.ReactNode }) {
       </div>
     );
   }
+
   if (!user) {
     return <Navigate to="/auth" replace />;
   }
+
   return <>{children}</>;
 }
 
